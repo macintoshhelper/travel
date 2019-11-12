@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [37.176122,-3.590274]
+        "coordinates": [-3.590274, 37.176122]
       },
       "properties": {
         "name": "Alhambra"
