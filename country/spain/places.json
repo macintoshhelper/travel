@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.17616,
+          -3.59037
+        ]
+      },
+      "properties": {
+        "name": "Alhambra"
+      }
+    }
+  ]
+}
