@@ -769,6 +769,18 @@
       "properties": {
         "name": "Entry - Puerta de la Justicia"
       }
+    }, {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5844231,
+          37.1742934
+        ]
+      },
+      "properties": {
+        "name": "Entry - Main Entry and Ticket Office"
+      }
     }
   ]
 }
