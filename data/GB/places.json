@@ -1,0 +1,15 @@
+{
+  "WSM": {
+    "name": "Westminster",
+    "items": [{
+      "id": "50-kalo-london",
+      "name": "50 Kalo",
+      "type": ["restaurant", "pizzeria"],
+      "city": "london",
+      "coordinates": [
+        51.507113,
+        -0.12652
+      ]
+    }]
+  }
+}
