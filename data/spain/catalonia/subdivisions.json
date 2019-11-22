@@ -1,0 +1,12 @@
+{
+  "B": {
+    "type": "province",
+    "name": "Barcelona",
+    "id": "barcelona"
+  },
+  "GI": {
+    "type": "province",
+    "name": "Girona",
+    "id": "girona"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "AN": {
+    "type": "autonomous-community",
+    "name": "Andalusia",
+    "id": "andalusia"
+  },
+  "AR": {
+    "type": "autonomous-community",
+    "name": "Aragon",
+    "id": ""
+  },
+  "AS": {
+    "type": "autonomous-community",
+    "name": "Principality of Asturias",
+    "id": "asturias"
+  },
+  "CN": {
+    "type": "autonomous-community",
+    "name": "Canary Islands",
+    "id": "canary-islands"
+  },
+  "CB": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+  "CL": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+  "CM": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+  "CT": {
+    "type": "autonomous-community",
+    "name": "Catalonia",
+    "id": "catalonia"
+  },
+  "CE": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+  "EX": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+  "GA": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+  "IB": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+  "RI": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+  "MD": {
+    "type": "autonomous-community",
+    "name": "Community of Madrid",
+    "id": "madrid-community"
+  },
+  "ML": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+  "MC": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+  "NC": {
+    "type": "",
+    "name": "",
+    "id": ""
+  },
+}
+
+ES-AN	 Andalucía	Andalusia	autonomous community
+ES-AR	 Aragón	Aragon	autonomous community
+ES-AS	 Asturias, Principado de	Principality of Asturias	autonomous community
+ES-CN	 Canarias	Canary Islands	autonomous community
+ES-CB	 Cantabria	Cantabria	autonomous community
+ES-CL	 Castilla y León	Castile and León	autonomous community
+ES-CM	 Castilla-La Mancha	Castile-La Mancha	autonomous community
+ES-CT	 Catalunya (ca) [Cataluña]	Catalonia	autonomous community
+ES-CE	 Ceuta	Ceuta	autonomous city in North Africa
+ES-EX	 Extremadura	Extremadura	autonomous community
+ES-GA	 Galicia (gl) [Galicia]	Galicia	autonomous community
+ES-IB	 Illes Balears (ca) [Islas Baleares]	Balearic Islands	autonomous community
+ES-RI	 La Rioja	La Rioja	autonomous community
+ES-MD	 Madrid, Comunidad de	Community of Madrid	autonomous community
+ES-ML	 Melilla	Melilla	autonomous city in North Africa
+ES-MC	 Murcia, Región de	Region of Murcia	autonomous community
+ES-NC	 Navarra, Comunidad Foral de
+Nafarroako Foru Komunitatea (eu)	Chartered Community of Navarre	autonomous community
+ES-PV	 País Vasco
+Euskal Herria (eu)	Basque Country	autonomous community
+ES-VC	 Valenciana, Comunidad
+Valenciana, Comunitat (ca)	Valencian Community	autonomous community

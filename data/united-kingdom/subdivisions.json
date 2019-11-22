@@ -1,0 +1,22 @@
+{
+  "ENG": {
+    "type": "country",
+    "name": "England",
+    "id": "england"
+  },
+  "NIR": {
+    "type": "province",
+    "name": "Northern Ireland",
+    "id": "northern-ireland"
+  },
+  "SCT": {
+    "type": "country",
+    "name": "Scotland",
+    "id": "scotland"
+  },
+  "WLS": {
+    "type": "country",
+    "name": "Wales",
+    "id": "wales"
+  }
+}

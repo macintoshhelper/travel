@@ -652,7 +652,8 @@
     "name": "South Sudan"
   },
   "ES": {
-    "name": "Spain"
+    "name": "Spain",
+    "id": "spain"
   },
   "LK": {
     "name": "Sri Lanka"
@@ -730,7 +731,8 @@
     "name": "United Arab Emirates"
   },
   "GB": {
-    "name": "United Kingdom"
+    "name": "United Kingdom",
+    "id": "united-kingdom"
   },
   "US": {
     "name": "United States"
