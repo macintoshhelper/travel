@@ -1,0 +1,24 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "Open-source and decentralised travel platform for discovering new places and getting info on-the-go.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macintoshhelper/travel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/macintoshhelper/travel/issues"
+  },
+  "homepage": "https://github.com/macintoshhelper/travel#readme",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "glob-promise": "^3.4.0"
+  }
+}
