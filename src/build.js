@@ -20,8 +20,18 @@ const build = async () => {
     if (exists) {
       const subdivisions = require(path.join(countryPath, 'subdivisions.json'));
 
+      for (const subCode in subdivisions) {
+        const subdivision = subdivisions[subCode];
+        const { id: subId } = subdivision;
 
-      console.log({ code, subdivisions });
+        const subPath = path.join(dataPath, id, subId);
+        const subExists = existsSync(subPath);
+        if (subExists) {
+          console.log({ code, subPath, id, subdivisions: require(path.join(subPath, 'subdivisions.json')) });
+        }
+      }
+
+      // console.log({ code, subdivisions });
     }
   }
 

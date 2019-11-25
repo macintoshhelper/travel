@@ -1,5 +1,6 @@
 {
   "MAD": {
+    "type": "city",
     "name": "Madrid",
     "id": "madrid"
   }

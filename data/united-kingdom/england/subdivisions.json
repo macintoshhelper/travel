@@ -1,9 +1,11 @@
 {
   "LON": {
+    "type": "city",
     "name": "London",
     "id": "london"
   },
   "BRS": {
+    "type": "city",
     "name": "Bristol",
     "id": "bristol"
   }
