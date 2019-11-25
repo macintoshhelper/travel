@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "GeometryCollection",
+    "geometries": [
+      {
+        "type": "Point",
+        "coordinates": [
+          -0.12652,
+          51.507113
+        ]
+      }
+    ],
+    "properties": {
+      "name": "50 Kalo",
+      "description": ""
+    }
+  }
+}
+]
+}

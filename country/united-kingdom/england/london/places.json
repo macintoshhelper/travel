@@ -3,7 +3,10 @@
     "id": "50-kalo-london",
     "name": "50 Kalo",
     "description": "",
-    "type": ["restaurant", "pizzeria"],
+    "type": [
+      "restaurant",
+      "pizzeria"
+    ],
     "geo": {
       "latitude": 51.507113,
       "longitude": -0.12652

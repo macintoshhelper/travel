@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "GeometryCollection",
+    "geometries": [
+      {
+        "type": "Point",
+        "coordinates": [
+          -3.58808024385027,
+          37.17605515
+        ]
+      }
+    ],
+    "properties": {
+      "name": "Alhambra",
+      "description": "Moorish palace and fortress complex."
+    }
+  }
+}
+]
+}

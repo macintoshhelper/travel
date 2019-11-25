@@ -1,41 +1,101 @@
 const glob = require('glob-promise');
 const path = require('path');
 const { promisify } = require('util');
-const { readFile, existsSync } = require('fs');
-
-const readFileAsync = promisify(readFile);
+const { promises, readFile, writeFile, existsSync } = require('fs');
 
 const dataPath = path.resolve(__dirname, '../data');
 
 const countries = require(path.join(dataPath, 'countries.json'));
 
+const walkSubdivisions = async (currentPath, subdivision, callback) => {
+  // console.log({ currentPath, subdivision });
+  const { id } = subdivision;
+
+  const subdivisionPath = path.join(currentPath, id);
+  const exists = existsSync(subdivisionPath);
+
+  // console.log({ subdivisionPath });
+
+  if (!exists) {
+    return;
+  }
+  
+  let subdivisions;
+
+  try {
+    subdivisions = require(path.join(subdivisionPath, 'subdivisions.json'));
+  } catch(err) {} // eslint-disable-line - suppress error
+
+  if (subdivisions) {
+    for (const code in subdivisions) {
+      const sub = subdivisions[code];
+
+      await walkSubdivisions(subdivisionPath, sub, callback);
+    }
+
+    return;
+  }
+  
+  return await callback(currentPath, subdivision);
+}
+
 const build = async () => {
+  
   for (const code in countries) {
-    const value = countries[code];
-    const { id } = value;
+    const country = countries[code];
 
-    const countryPath = path.join(dataPath, id);
-    const exists = existsSync(countryPath);
+    if (country.id) {
+      await walkSubdivisions(dataPath, country, async (currentPath, subdivision) => {
+        const subPath = path.join(currentPath, subdivision.id);
+        const placesPath = path.join(subPath, 'places.json')
+        if (existsSync(placesPath)) {
+          const places = require(placesPath);
+          const [_, relativePath] = subPath.split('/data/');
+          const subdivisionParts = relativePath.split('/');
 
-    if (exists) {
-      const subdivisions = require(path.join(countryPath, 'subdivisions.json'));
+          const subOutputPath = subPath.replace('/data/', '/country/');
 
-      for (const subCode in subdivisions) {
-        const subdivision = subdivisions[subCode];
-        const { id: subId } = subdivision;
+          if (!existsSync(subOutputPath)) {
+            await promises.mkdir(subOutputPath, { recursive: true });
+          }
 
-        const subPath = path.join(dataPath, id, subId);
-        const subExists = existsSync(subPath);
-        if (subExists) {
-          console.log({ code, subPath, id, subdivisions: require(path.join(subPath, 'subdivisions.json')) });
-        }
+
+          await promises.writeFile(
+            path.join(subPath.replace('/data/', '/country/'), 'places.geojson'),
+`{
+  "type": "FeatureCollection",
+  "features": [${Object.entries(places).map(([code, place]) => 
+`
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "GeometryCollection",
+    "geometries": [
+      {
+        "type": "Point",
+        "coordinates": [
+          ${place.geo.longitude},
+          ${place.geo.latitude}
+        ]
       }
-
-      // console.log({ code, subdivisions });
+    ],
+    "properties": {
+      "name": "${place.name}",
+      "description": "${place.description}"
+    }
+  }
+}
+`).join(',\n')
+  }]
+}`
+          )
+          console.log({ currentPath, places });
+        }
+      });
     }
   }
 
-  console.log({ countries });
+  // console.log({ countries });
 
   return true;
 };
