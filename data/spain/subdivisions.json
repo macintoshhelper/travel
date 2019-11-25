@@ -7,7 +7,7 @@
   "AR": {
     "type": "autonomous-community",
     "name": "Aragon",
-    "id": ""
+    "id": "aragon"
   },
   "AS": {
     "type": "autonomous-community",
@@ -20,19 +20,19 @@
     "id": "canary-islands"
   },
   "CB": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-community",
+    "name": "Cantabria",
+    "id": "cantabria"
   },
   "CL": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-community",
+    "name": "Castile and León",
+    "id": "castile-and-leon"
   },
   "CM": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-community",
+    "name": "Castile-La Mancha",
+    "id": "castile-la-mancha"
   },
   "CT": {
     "type": "autonomous-community",
@@ -40,29 +40,29 @@
     "id": "catalonia"
   },
   "CE": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-city",
+    "name": "Ceuta",
+    "id": "ceuta"
   },
   "EX": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-community",
+    "name": "Extremadura",
+    "id": "extremadura"
   },
   "GA": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-community",
+    "name": "Galicia",
+    "id": "galicia"
   },
   "IB": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-community",
+    "name": "Balearic Islands",
+    "id": "balearic-islands"
   },
   "RI": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-community",
+    "name": "La Rioja",
+    "id": "la-rioja"
   },
   "MD": {
     "type": "autonomous-community",
@@ -70,41 +70,28 @@
     "id": "madrid-community"
   },
   "ML": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-city",
+    "name": "Melilla",
+    "id": "melilla"
   },
   "MC": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-community",
+    "name": "Region of Murcia",
+    "id": "murcia-region"
   },
   "NC": {
-    "type": "",
-    "name": "",
-    "id": ""
+    "type": "autonomous-community",
+    "name": "Chartered Community of Navarre",
+    "id": "navarra-community"
   },
+  "PV": {
+    "type": "autonomous-community",
+    "name": "Basque Country",
+    "id": "basque-country"
+  },
+  "VC": {
+    "type": "autonomous-community",
+    "name": "Valencian Community",
+    "id": "valenciana-community"
+  }
 }
-
-ES-AN	 Andalucía	Andalusia	autonomous community
-ES-AR	 Aragón	Aragon	autonomous community
-ES-AS	 Asturias, Principado de	Principality of Asturias	autonomous community
-ES-CN	 Canarias	Canary Islands	autonomous community
-ES-CB	 Cantabria	Cantabria	autonomous community
-ES-CL	 Castilla y León	Castile and León	autonomous community
-ES-CM	 Castilla-La Mancha	Castile-La Mancha	autonomous community
-ES-CT	 Catalunya (ca) [Cataluña]	Catalonia	autonomous community
-ES-CE	 Ceuta	Ceuta	autonomous city in North Africa
-ES-EX	 Extremadura	Extremadura	autonomous community
-ES-GA	 Galicia (gl) [Galicia]	Galicia	autonomous community
-ES-IB	 Illes Balears (ca) [Islas Baleares]	Balearic Islands	autonomous community
-ES-RI	 La Rioja	La Rioja	autonomous community
-ES-MD	 Madrid, Comunidad de	Community of Madrid	autonomous community
-ES-ML	 Melilla	Melilla	autonomous city in North Africa
-ES-MC	 Murcia, Región de	Region of Murcia	autonomous community
-ES-NC	 Navarra, Comunidad Foral de
-Nafarroako Foru Komunitatea (eu)	Chartered Community of Navarre	autonomous community
-ES-PV	 País Vasco
-Euskal Herria (eu)	Basque Country	autonomous community
-ES-VC	 Valenciana, Comunidad
-Valenciana, Comunitat (ca)	Valencian Community	autonomous community

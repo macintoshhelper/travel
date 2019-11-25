@@ -1,0 +1,42 @@
+{
+  "AL": {
+    "type": "province",
+    "name": "Almería",
+    "id": "almeria-province"
+  },
+  "CA": {
+    "type": "province",
+    "name": "Cádiz",
+    "id": "cadiz-province"
+  },
+  "CO": {
+    "type": "province",
+    "name": "Córdoba",
+    "id": "cordoba-province"
+  },
+  "GR": {
+    "type": "province",
+    "name": "Granada",
+    "id": "granada-province"
+  },
+  "H": {
+    "type": "province",
+    "name": "Huelva",
+    "id": "huelva-province"
+  },
+  "J": {
+    "type": "province",
+    "name": "Jaén",
+    "id": "jaen-province"
+  },
+  "MA": {
+    "type": "province",
+    "name": "Málaga",
+    "id": "malaga-province"
+  },
+  "SE": {
+    "type": "province",
+    "name": "Sevilla",
+    "id": "sevilla-province"
+  }
+}

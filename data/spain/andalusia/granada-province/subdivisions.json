@@ -1,0 +1,12 @@
+{
+  "GRX": {
+    "type": "city",
+    "name": "Granada",
+    "id": "granada"
+  },
+  "OGV": {
+    "type": "town",
+    "name": "Orgiva",
+    "id": "orgiva"
+  }
+}
