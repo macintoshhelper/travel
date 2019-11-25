@@ -59,35 +59,31 @@ const build = async () => {
             await promises.mkdir(subOutputPath, { recursive: true });
           }
 
+          const output = {
+            type: 'FeatureCollection',
+            features: Object.entries(places).map(([code, place]) => ({
+              type: 'Feature',
+              geometry: {
+                type: 'GeometryCollection',
+                geometries: [{
+                  type: 'Point',
+                  coordinates: [
+                    place.geo.longitude,
+                    place.geo.latitude
+                  ]
+                }]
+              },
+              properties: {
+                name: place.name,
+                description: place.description,
+              },
+            }))
+          };
+
 
           await promises.writeFile(
             path.join(subPath.replace('/data/', '/country/'), 'places.geojson'),
-`{
-  "type": "FeatureCollection",
-  "features": [${Object.entries(places).map(([code, place]) => 
-`
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "GeometryCollection",
-    "geometries": [
-      {
-        "type": "Point",
-        "coordinates": [
-          ${place.geo.longitude},
-          ${place.geo.latitude}
-        ]
-      }
-    ],
-    "properties": {
-      "name": "${place.name}",
-      "description": "${place.description}"
-    }
-  }
-}
-`).join(',\n')
-  }]
-}`
+            JSON.stringify(output, null, 2),
           )
           console.log({ currentPath, places });
         }
